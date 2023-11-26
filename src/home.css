@@ -1,0 +1,38 @@
+.container {
+    background-color: aliceblue;
+
+    display: grid;
+
+    grid-template-rows: 250px 150px;
+    grid-template-columns: 150px 200px 250px;
+
+}
+
+.item {
+    background-color: cadetblue;
+}
+
+.item--1 {
+    background-color: blueviolet;
+}
+
+.item--2 {
+    background-color:chocolate;
+}
+
+.item--3 {
+    background-color: cornflowerblue;
+}
+
+.item--4 {
+    background-color: darkcyan;
+}
+
+.item--5 {
+    background-color: darkolivegreen;
+}
+
+.item--6 {
+    background-color: hotpink;
+    
+}
