@@ -1,10 +1,13 @@
 .container {
     background-color: aliceblue;
+    margin: 30px auto;
+    width: 1000px;
 
     display: grid;
 
     grid-template-rows: 250px 150px;
-    grid-template-columns: 150px 200px 250px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr 5fr 2fr;
 
     column-gap: 20px;
     row-gap: 30px;
