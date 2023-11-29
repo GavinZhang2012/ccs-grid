@@ -1,18 +1,17 @@
 .container {
     background-color: aliceblue;
     margin: 30px auto;
-    width: 1000px;
+    width: 600px;
 
     display: grid;
 
-    grid-template-rows: 250px 150px;
+    grid-template-rows: 250px 150px 150px;
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: 1fr 5fr 2fr;
 
     column-gap: 20px;
     row-gap: 30px;
-
-    gap: 25;
+    /*gap: 25;*/
 
 }
 
@@ -22,6 +21,8 @@
 
 .item--1 {
     background-color: blueviolet;
+    grid-row: 2/3;
+    grid-column: 2/3;
 }
 
 .item--2 {
@@ -42,5 +43,11 @@
 
 .item--6 {
     background-color: hotpink;
-    
+
 }
+
+.item--7 { background-color: antiquewhite; }
+
+.item--8 { background-color: lightgreen; }
+
+.item--9 { background-color: darkred; }
