@@ -133,6 +133,8 @@
 
 .sidebar {
     grid-area: side;
+    display: flex;
+    flex-direction: column;
 }
 
 .main {
