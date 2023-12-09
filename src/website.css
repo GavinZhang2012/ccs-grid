@@ -60,7 +60,7 @@
 }
 
 .footer {
-    grid-column: col-start 1 / grid-end; 
+    grid-column: col-start 1 / grid-end;
 }
 */
 
@@ -74,7 +74,7 @@
     grid-template-rows: 100px 200px 500px 100px;
     grid-template-columns: 1fr 1fr 1fr 2fr;
 
-    grid-template-areas: ". header header header"
+    grid-template-areas: "header header header header"
                          "box-1 box-2 box-3 side"
                          "main main main side"
                          "footer footer footer footer";
@@ -83,14 +83,44 @@
 .item {
     background-color: red;
     margin: 10px;
+    padding: 0px;
 }
 
 .header {
     grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    column-gap: 10px;
 }
 
 .box-1 {
     grid-area: box-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.box-1-avatar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 .box-2 {
@@ -107,9 +137,58 @@
 
 .main {
     grid-area: main;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 
+    .main-number {
+        display: flex;
+        justify-content: space-between;
+
+        .main-number-item {
+            display: flex;
+            flex-direction: column;
+
+            border-right-color: bisque;
+            border-right-width: 1px;
+            border-right-style: solid;
+            padding-right: 10px;
+        }
+    }
 }
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+
+    .main-header-name {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 
 .footer {
     grid-area: footer
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0,
+    'wght' 400,
+    'GRAD' 1,
+    'opsz' 24
+}
+.icon {
+  font-size: 40px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
 }
